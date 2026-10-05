@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <!-- External CSS -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+
+<form action="/register" method="POST">
+
+<!-- 1. Full Name -->
+ <label>Full Name:</label>
+    <input type="text" name="Full Name" id="Full Name" placeholder="Enter your full name"
+    required><br><br>
+
+    <!-- 2. Email -->
+    <label>Email:</label>
+    <input type="text" name="Email" id="Email" placeholder="Enter your Email"
+    required><br><br>
+
+<!-- 3. Password -->
+    <label>Password:</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password"
+    required><br><br>
+
+    <!-- 4. Gender-->
+    <label>Gender</label>
+    <input type="radio" name="gender" id="gender" value="male"required>Male
+    <input type="radio" name="gender" id="gender" value="female"required>Female<br><br> 
+
+<!-- 5. Bio-->
+   <label>About yourself:</label>
+    <textarea name="bio" id="bio" placeholder="Tell us a little about yourself"></textarea required>
+     <br><br>
+
+     <!-- 6. Country-->
+    <label>Country:</label>
+<select name="country" id="country" required>
+    <option>Nigeria</option>
+    <option>Ghana</option>
+    <option>Kenya</option>
+    <option>South Africa</option>
+   </selection><br><br>
+
+<!-- 7. Terms and Conditions -->
+<label>Checkbox</label>
+<input type="checkbox" name="agree" id="agree" value="agree" required> I agree to the terms and conditions <br><br>
+
+<!-- 8. Submit Button -->
+<button type="submit">Register</button><br><br><br><br>
+</form>
+
+<form action="/register" method="post">
+    <!-- resgister input's go in here-->
+     <input type="text" name="username" placeholder="username">
+     <input type="email" name="email" placeholder="email">
+     <input type="password" name="password" placeholder="password">
+     <button type="submit">Register</button required>
+    </form><br><br>
+
+    <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Search</button required>
+
+</body>
+</html>
